@@ -91,7 +91,7 @@ class _LoginPageState extends State<LoginPage> {
         //  NO saved Credentials
         try {
           final response = await http.post(
-            Uri.parse('https://minimalbackend.onrender.com/user/login'),
+            Uri.parse('https://ecommercebackend-bdsh.onrender.com/user/login'),
             body: jsonEncode({
               'email': emailController.text,
               'password': passwordController.text,
@@ -118,7 +118,7 @@ class _LoginPageState extends State<LoginPage> {
     } else {
       try {
         final response = await http.post(
-          Uri.parse('https://minimalbackend.onrender.com/user/login'),
+          Uri.parse('https://ecommercebackend-bdsh.onrender.com/user/login'),
           body: jsonEncode({
             'email': emailController.text,
             'password': passwordController.text,
